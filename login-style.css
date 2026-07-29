@@ -1,0 +1,203 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+body {
+  background-color: #fafafa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.main-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  max-width: 380px;
+}
+
+.login-container {
+  width: 100%;
+}
+
+.login-box, .signup-box {
+  background-color: #ffffff;
+  border: 1px solid #dbdbdb;
+  border-radius: 8px;
+  padding: 30px 35px;
+  text-align: center;
+}
+
+.logo {
+  font-family: sans-serif;
+  font-size: 32px;
+  margin-bottom: 25px;
+  font-weight: bold;
+}
+
+.login-form input {
+  width: 100%;
+  background: #fafafa;
+  border: 1px solid #dbdbdb;
+  border-radius: 4px;
+  padding: 10px;
+  font-size: 13px;
+  margin-bottom: 8px;
+  outline: none;
+}
+
+.btn-login {
+  width: 100%;
+  background-color: #0095f6;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 9px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 8px;
+}
+
+.error-msg {
+  color: #ed4956;
+  font-size: 12px;
+  margin: 6px 0;
+  display: none;
+}
+
+.divider {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.line {
+  flex: 1;
+  height: 1px;
+  background-color: #dbdbdb;
+}
+
+.or {
+  margin: 0 15px;
+  color: #8e8e8e;
+  font-size: 12px;
+}
+
+.forgot-password {
+  color: #00376b;
+  font-size: 12px;
+  text-decoration: none;
+}
+
+.signup-box {
+  margin-top: 10px;
+  padding: 18px;
+  font-size: 14px;
+}
+
+.signup-box a {
+  color: #0095f6;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.certificate-card {
+  width: 100%;
+  background: #ffffff;
+  border: 2px solid #2ea44f;
+  border-radius: 8px;
+  padding: 16px;
+  display: none;
+}
+
+.cert-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border-bottom: 1px dashed #dbdbdb;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+.cert-icon { font-size: 28px; }
+.cert-header h3 { font-size: 15px; }
+.cert-sub { font-size: 11px; color: #6e7781; }
+.cert-body p { font-size: 13px; margin-bottom: 10px; }
+.cert-details {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 12px;
+  background: #f6f8fa;
+  padding: 8px;
+  border-radius: 6px;
+}
+.status-pass { color: #1a7f37; }
+/* الكود باش تقاد النافذة المنبثقة والتصويرة تكون صغيرة وحدا النص */
+.modal {
+    display: flex;
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 90%;
+    text-align: center;
+}
+
+/* كيخلي التصويرة والنص يجيو جنباً إلى جنب */
+.modal-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    text-align: right;
+    margin-bottom: 20px;
+}
+
+/* تصغير التصويرة وتدويرها */
+.modal-img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+.modal-header h2 {
+    margin: 0 0 5px 0;
+    font-size: 18px;
+}
+
+.modal-header p {
+    margin: 0;
+    font-size: 14px;
+    color: #555;
+}
+
+.btn-close {
+    background-color: #0095f6;
+    color: white;
+    border: none;
+    padding: 8px 25px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 100%;
+}
