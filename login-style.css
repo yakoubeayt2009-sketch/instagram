@@ -201,3 +201,10 @@ body {
     font-weight: bold;
     width: 100%;
 }
+/* التحكم فـ قياس ومكان اللوجو */
+.profile-img {
+  max-width: 175px;  /* عرض الصورة */
+  height: auto;      /* الحفاظ على التناسق */
+  display: block;
+  margin: 0 auto 20px auto; /* كتخلي الصورة فـ الوسط وكتخلي مسافة تحت منها */
+}
